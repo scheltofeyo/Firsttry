@@ -44,14 +44,17 @@
       background-position: 0% 50%;
     }
   }
-
+  .logo img {
+    width: 200px;
+    padding-top: 60px;
+  }
   .kolommen {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 75px;
+    top: 25px;
   }
   .row {
     display: flex;
@@ -73,6 +76,7 @@
     background-color: rgba(51, 51, 51, 0.5);
     color: white;
     margin-bottom: -1px;
+    border-top: 5px solid #f2d364;
   }
 
   .blue h1 {
@@ -87,7 +91,7 @@
   .gradient {
     background-color: rgba(51, 51, 51, 0.5);
     margin-top: -1px;
-    
+    border-top: 5px solid #f2d364;
   }
 
   .overlay {
@@ -98,6 +102,7 @@
   .yellow {
     background-color: rgba(51, 51, 51, 0.5);
     height: 250px;
+    border-top: 5px solid #f2d364;
   }
 
   .yellow h2 {
@@ -105,19 +110,36 @@
     font-weight: 700;
     font-size: 23px;
     letter-spacing: 0.05em;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 
   .yellow p {
     font-style: normal;
     font-weight: 300;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 15px;
+    line-height: 20px;
     color: white;
+    margin-bottom: 20px;
   }
-.text {
-  padding: 15px 0;
-}
+
+  button {
+    padding: 8px 40px;
+    font-family: inherit;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 15px;
+letter-spacing: 2px;
+    border-radius: 32px;
+    border: none;
+    background: #f2d364;
+    color: white;
+    box-shadow: 0px 10px 15px rgba(0, 5, 10, 0.2);
+  }
+
+  button a {
+    color: white;
+    text-decoration: none;
+  }
   .circle-ct {
     display: flex;
     justify-content: space-around;
@@ -133,23 +155,14 @@
     border-radius: 200px;
     width: 62px;
     height: 62px;
+    box-shadow: 0px 10px 15px rgba(0, 5, 10, 0.2);
   }
 
   .circle .fab {
     color: white;
     font-size: 35px;
   }
-  .circle:hover {
-    position: relative;
-    top: -3px;
-    box-shadow: 0px 10px 15px rgba(0, 5, 10, 0.2);
-  }
 
-  .gradient img:hover {
-    position: relative;
-    top: -3px;
-    box-shadow: 0px 10px 15px rgba(0, 5, 10, 0.2);
-  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -199,11 +212,16 @@
     }
   }
 
+  .logo img {
+    width: 200px;
+    padding-top: 60px;
+  }
+
   .kolommen {
     display: flex;
     justify-content: center;
     position: relative;
-    top: 150px;
+    top: 50px;
   }
   .row {
     display: flex;
@@ -224,6 +242,7 @@
   .blue {
     background-color: rgba(51, 51, 51, 0.5);
     color: white;
+    border-top: 5px solid #f2d364;
   }
 
   .blue h1 {
@@ -237,6 +256,7 @@
   }
   .gradient {
     background-color: rgba(51, 51, 51, 0.5);
+    border-top: 5px solid #f2d364;
   }
 
   .overlay {
@@ -247,6 +267,7 @@
   .yellow {
     background-color: rgba(51, 51, 51, 0.5);
     height: 250px;
+    border-top: 5px solid #f2d364;
   }
 
   .yellow h2 {
@@ -254,18 +275,16 @@
     font-weight: 700;
     font-size: 23px;
     letter-spacing: 0.05em;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 
   .yellow p {
     font-style: normal;
     font-weight: 300;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 15px;
+    line-height: 20px;
     color: white;
-  }
-  .text {
-    padding: 15px 0;
+    margin-bottom: 20px;
   }
 
   .circle-ct {
@@ -275,6 +294,29 @@
     padding: 0 40px;
   }
 
+  button {
+    padding: 8px 40px;
+    font-family: inherit;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 15px;
+letter-spacing: 2px;
+    border-radius: 32px;
+    border: none;
+    background: #f2d364;
+    color: white;
+  }
+
+  button a {
+    color: white;
+    text-decoration: none;
+  }
+  button:hover {
+    position: relative;
+    top: -3px;
+    box-shadow: 0px 10px 15px rgba(0, 5, 10, 0.2);
+  }
+  
   .circle {
     display: flex;
     justify-content: center;
@@ -283,6 +325,7 @@
     border-radius: 200px;
     width: 62px;
     height: 62px;
+    margin: 5px;
   }
 
   .circle .fab {
@@ -295,9 +338,10 @@
     box-shadow: 0px 10px 15px rgba(0, 5, 10, 0.2);
   }
 
-  .gradient img:hover {
+  .gradient:hover {
     position: relative;
+    perspective: 100px;
     top: -3px;
-    box-shadow: 0px 10px 15px rgba(0, 5, 10, 0.2);
+    box-shadow: 0px 10px 15px rgba(0, 5, 10, 0.3);
   }
 }
